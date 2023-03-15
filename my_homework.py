@@ -1,14 +1,11 @@
-#mail, login , password 
+
 def registration (account):
     mail = input("Enter your mail. Mail must contain '@' and '.' : ")
     if "@" and "." not in mail:
         print("Incorrect mail. Mail must contain '@' and '.'")
     else:
         login = input("Enter your login. The login must be longer than two characters and begin with an uppercase letter: ")
-#        first_letter = login[0]
-#       print (first_letter)
-#       print(login.upper()[0])
-#        if first_letter != login.upper()[0] or len(login) < 2:
+
         if login[0] != login.upper()[0] or len(login) < 2:
             print("Incorrect login. The login must be longer than two characters and begin with an uppercase letter")
         else:
@@ -55,13 +52,5 @@ print(users)
 
 
 
-#user = 
-
-
-#login = input("Enter login that you want to use continuously : ")
-#password = input("Enter your password : ")
-#balance = input("How much money do you want to send? : ")
-
-#user = registration(login ,password, balance)
 
 
